@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #111;
+	font-family: 'Poppins', sans-serif;
+}
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(https://aomine1745.github.io/Img/bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	filter: blur(4px) brightness(.8);
+}
+.calendar {
+	position: relative;
+	width: 200px;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 8px;
+	overflow: hidden;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, .4));
+	box-shadow: 2px 2px 16px rgba(0, 0, 0, .5) 
+}
+.calendar #monthName {
+	position: relative;
+	padding: 5px 18px;
+	background-color: #ff6331;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+}
+.calendar #dayName {
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #999;
+}
+.calendar #dayNumber {
+	line-height: 1em;
+	font-size: 80px;
+	font-weight: 700;
+	color: #333;
+}
+.calendar #year {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #999;
+}
